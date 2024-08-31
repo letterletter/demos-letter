@@ -1,0 +1,32 @@
+# system
+.DS_Store
+.idea/
+
+# temp
+temp/
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+.turbo
+.eslintcache
+
+# coverage
+coverage/
+*.lcov
+
+# dependency
+node_modules/
+
+# build
+dist/
+esm/
+lib/
+designer-dist/
+
+# other
+*.local.*
+.VSCodeCounter/
+
+.kael

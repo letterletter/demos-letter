@@ -1,0 +1,28 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "build:dep": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "build:simulator": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false
+    }
+  },
+  "globalDependencies": [
+    "tsconfig.base.json",
+    "tsconfig.json",
+    "jest.config.ts"
+  ]
+}

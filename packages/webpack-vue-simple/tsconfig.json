@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "useDefineForClassFields": true,
+    "module": "es2015",
+    "lib": ["dom", "es5", "es6", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "allowJs": true,
+    "jsx": "preserve",
+
+    /* Linting */
+    "strict": false,
+    "checkJs": false
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "./node_modules/@mybricks/**/*" ],
+  "exclude": ["dist/*", "node_modules/*"]
+}
