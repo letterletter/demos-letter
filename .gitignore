@@ -12,6 +12,7 @@ temp/
 .turbo
 .eslintcache
 
+.env
 # coverage
 coverage/
 *.lcov
