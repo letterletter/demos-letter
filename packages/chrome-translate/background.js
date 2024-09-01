@@ -30,7 +30,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   const selectedText = info.selectionText;
   console.log(`Selected text: ${selectedText}`, tab);
   const targetLanguage = 'zh-CN'; // 目标语言，例如中文
-  const sign = calculateSign(appId, selectedText, salt, secret)
+  const sign = calculateSign(appId, selectedText, salt, 'LG4cPOkuSQpnfy9Ced61')
   const url = `https://fanyi-api.baidu.com/api/trans/vip/translate?q=${selectedText}&from=auto&to=zh&appid=20211120001004516&salt=1234568&sign=${sign}`
   console.log('url ==', url, 'sign', sign)
     fetch( url)
