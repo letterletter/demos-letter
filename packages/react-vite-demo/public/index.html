@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script defer  src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script  defer src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+  <!-- <script defer  src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script  defer src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script> -->
+  <!-- <script defer type="module" src="./my-component.umd.js" ></script> -->
+  <script defer src="https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-13/1728788384740.adc55d3ad2ca5618.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script defer>
+    console.log(window)
+
+    document.addEventListener('DOMContentLoaded', () => {
+    window.ReactDOM.render(
+      React.createElement(window.MyComponent),
+      document.getElementById('app')
+    );
+  });
+
+    window.ReactDOM.render(React.createElement(window.MyComponent), document.getElementById('app'))
+  </script>
+</body>
+</html>
