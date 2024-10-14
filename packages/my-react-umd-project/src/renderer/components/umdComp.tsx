@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { importScript } from '../utils/loadScript'
-import systemJs from 'systemjs'
 
 export const UmdComponent = ({ url, children, umdProps = {} }) => {
   const [loading, setLoading] = useState(true)
