@@ -3,7 +3,6 @@ import * as MUI from '@m-ui/react'
 import * as lodash from 'lodash'
 import React, { useMemo } from 'react'
 import { deps, schema } from './constants'
-import request from './request'
 // const materialDepsCache = MaterialDepsCache.getInstance()
 /**
  * RenderCom
@@ -19,7 +18,6 @@ export interface RenderComProps {
 const RenderCom: React.FC<RenderComProps> = React.memo(props => {
   const utils = {
     lodash,
-    request,
     MUI,
   }
   const { Modal, Popconfirm, Tooltip } = MUI

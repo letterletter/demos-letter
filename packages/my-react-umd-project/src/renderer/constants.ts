@@ -7,20 +7,17 @@ import * as ESProComponents from '@es/pro-components'
 import * as ESProComponentsFields from '@es/pro-components-fields'
 
 
-export const RenderComCDN = 'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-14/1728909669116.6214e6ea4c70b930.js'
-export const CDN2 = 'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-11/1728640635286.571782d4b1a78fb9.js'
-export const CDN3=  'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-11/1728633434866.02c0df43cec737be.js'
-
+export const RenderComCDN = 'https://cdnfile.corp.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-14/1728909669116.6214e6ea4c70b930.js'
 
 export const urls = [
   'https://unpkg.com/react-draggable@4.4.4/build/web/react-draggable.min.js',
   // RenderCom 
-  'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-14/1728909669116.6214e6ea4c70b930.js',
+  'https://cdnfile.corp.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-14/1728909669116.6214e6ea4c70b930.js',
   // Vite Demo
-  'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-13/1728799903328.9c86c9cafa0fbd61.js',
-  'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-11/1728625605777.45ba73bd31ac5db9.js',
+  'https://cdnfile.corp.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-13/1728799903328.9c86c9cafa0fbd61.js',
+  'https://cdnfile.corp.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-11/1728625605777.45ba73bd31ac5db9.js',
   // button
-  'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-14/1728914111742.253c11471b90d5b1.js',
+  'https://cdnfile.corp.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-14/1728914111742.253c11471b90d5b1.js',
 ]
 
 const  MATERIAL_TYPE_SEPARATOR = '::'

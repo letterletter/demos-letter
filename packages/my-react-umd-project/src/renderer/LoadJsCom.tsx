@@ -7,7 +7,6 @@ import { RenderComCDN } from './constants'
 import { deps, getLocalDeps } from './constants'
 import { loadCjs, loadJSPure } from './loadCjs'
 import { fetchComponent } from './fetchCom'
-// const testComponentCDN = 'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-10/1728549620663.29107bb955701aaa.js'
 // // import {} from '@'
 
 export function RendererJsDemo() {

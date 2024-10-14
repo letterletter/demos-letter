@@ -46,7 +46,7 @@ import './index.css'
 //       {/* <ImageAndTable
 //         style={{ width: '400px'}}
 //         ref={testRef}
-//         imageSrc='https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-03-18/1710742986903.43b4a409c3f6dc08.svg'
+//         imageSrc='https://cdnfile.corp.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-03-18/1710742986903.43b4a409c3f6dc08.svg'
 //         buttonLabel='按钮文字'
 //         textLabel='普通文本'
 //         /> */}

@@ -18,9 +18,9 @@ console.log('window ---组件册', window)
 const urls = [
   'https://unpkg.com/react-draggable@4.4.4/build/web/react-draggable.min.js',
   // RenderCom 
-  'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-12/1728743964776.7f0006d30ba1c360.js',
+  'https://cdnfile.corp..com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-12/1728743964776.7f0006d30ba1c360.js',
   // Vite Demo
-  'https://cdnfile.corp.kuaishou.com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-13/1728799903328.9c86c9cafa0fbd61.js',
+  'https://cdnfile.corp..com/kc/files/a/kael-mui-demo/chrome-plugin-upload/2024-10-13/1728799903328.9c86c9cafa0fbd61.js',
 ]
 const App = () => {
   // rul[0], urls[3]可以被解析，但在kael引擎用不了
