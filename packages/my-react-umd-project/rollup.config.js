@@ -8,7 +8,11 @@ import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
 import alias from '@rollup/plugin-alias';
+import builtins from 'rollup-plugin-node-builtins';
+import globals from 'rollup-plugin-node-globals';
 import postcssImport from 'postcss-import';
+import polyfillNode from 'rollup-plugin-polyfill-node';
+
 import json from '@rollup/plugin-json';
 
 import path from 'path'
@@ -33,8 +37,10 @@ export default {
 
     },
   },
-  external: ['http', 'https', 'url', 'stream', 'assert', 'tty', 'util', 'os', 'zlib', 'path', 'fs', 'react', 'react-dom', '@m-ui/react', '@m-ui/icons', 'lodash'], // 不打包 React 和 ReactDOM
+  external: [ 'react', 'react-dom', '@m-ui/react', '@m-ui/icons', 'lodash'], // 不打包 React 和 ReactDOM
   plugins: [
+    // builtins(), // 处理 Node.js 内置模块
+    // globals(), // 处理 Node.js 全局变量
     alias({
       entries: [
         { find: '~', replacement: path.resolve(__dirname, 'node_modules/') },
@@ -69,6 +75,16 @@ export default {
     // }),
     resolve(),
     commonjs(),
+    // commonjs({
+    //   include: 'node_modules/**',
+    //   namedExports: {
+    //     'http-browserify': ['request', 'get'],
+    //     'stream-browserify': ['Readable', 'Writable'],
+    //     'zlib-browserify': ['deflate', 'inflate'],
+    //     'path-browserify': ['resolve', 'join'],
+    //     'buffer': ['Buffer'],
+    //   },
+    // }),
     babel({ 
       babelHelpers: 'bundled',
       extensions: ['.js', '.jsx', '.ts', '.tsx'], // 添加支持的文件扩展名
